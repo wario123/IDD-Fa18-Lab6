@@ -2,9 +2,6 @@
 
 *A lab report by Karim Arem*
 
-## In this Report
-
-To submit your lab, fork [this repository](https://github.com/FAR-Lab/IDD-Fa18-Lab6). You'll need to upload any code you change into your fork, as well as upload a video of a friend or classmate using your chatbot.
 
 ## Make the ChatBot your own
 
