@@ -7,7 +7,7 @@
 
 **Describe what changes you made to the baseline chatbot here. Don't forget to push your modified code to this repository.**
 
-My chatbot is a NewsBot! It will give you the top real-time headline news based on a specific category inputed. The Wall Street Journal news api was installed into the Raspberry Pi. newsapi objects were created in order to power the Pi with current news!<br><br>
+My chatbot is a NewsBot! It will give you the top real-time headline news based on a specific category inputed. The NewsAPI package was installed into the Raspberry Pi. newsapi objects were created in order to power the Pi with current news from over 30,000 sources all over the web!<br><br>
 
 At the end of the chatServer.js file are two functions: getNews() function and a getNews_article() function, which both take in as parameters the question_number, and the topic inputed by the user (e.g. business, health, science, etc.); getNews() returns a news article title and getNews_article returns the url for that article.<br><br>
 
