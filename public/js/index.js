@@ -3,10 +3,13 @@ var socket = io();
 var questionRecieved = false;
 // keep count of question, used for IF condition.
 var output = document.getElementById('output'); // store id="output" in output variable
-output.innerHTML = "<h1 id=response> </h1>"; // ouput first question
+// var output2 = document.getElementById('output');
+output.innerHTML = "<h1 id=response1> </h1>\n <h1 id=response2> </h1>"; // ouput first question
+// output2.innerHTML = "<h1 id=response2> </h1>";
 
 function sendMessage() {
   var input = document.getElementById("input").value;
+  // console.log("This is the input: " + input);
   socket.emit('message', input);
   document.getElementById("input").value = "";
   document.getElementById("input").style.display = "none";
@@ -21,7 +24,8 @@ $(document).keypress(function(e) {
 });
 
 function changeText(input) {
-  document.getElementById('response').textContent = input;
+  
+  document.getElementById('response1').textContent = input;
 }
 
 socket.on('answer', function(msg) {
@@ -42,7 +46,7 @@ socket.on('changeBG', function(msg) {
 
 socket.on('changeFont', function(msg) {
   console.log('Changeing Font to:', msg);
-  var h1 = document.getElementById('response');
+  var h1 = document.getElementById('response1');
   h1.style.color = 'white';
 
 
